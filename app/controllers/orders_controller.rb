@@ -2,6 +2,7 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
+    @total_quantity = total_quantity
   end
 
   def create
@@ -18,6 +19,9 @@ class OrdersController < ApplicationController
   rescue Stripe::CardError => e
     redirect_to cart_path, flash: { error: e.message }
   end
+
+
+
 
   private
 
@@ -66,5 +70,15 @@ class OrdersController < ApplicationController
     end
     total
   end
+
+
+  def total_quantity
+    total = 0
+    @order.line_items.each do |l|
+      total += l['quantity'].to_i
+    end
+    total
+  end
+
 
 end

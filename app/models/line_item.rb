@@ -6,4 +6,15 @@ class LineItem < ActiveRecord::Base
   monetize :item_price_cents, numericality: true
   monetize :total_price_cents, numericality: true
 
+  def name
+    product.name
+  end
+
+  def image
+    product.image
+  end
+
+  def description
+    product.description
+  end
 end
