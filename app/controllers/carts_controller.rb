@@ -2,6 +2,7 @@ class CartsController < ApplicationController
 
   before_filter :authorize
   def show
+    @cart = cart
   end
 
   def add_item
