@@ -21,6 +21,19 @@ end
 
 # Let's do this ...
 
+
+## USER
+
+User.destroy_all
+
+user1 = User.create!({
+  first_name:  'Diego',
+  last_name:  'Ribas',
+  email:  'diego@gmail.com',
+  password:  '1234',
+})
+
+
 ## CATEGORIES
 
 puts "Finding or Creating Categories ..."
@@ -130,6 +143,41 @@ cat3.products.create!({
   image: open_asset('furniture3.jpg'),
   quantity: 0,
   price: 2_483.75
+})
+
+## NAMING PRODUCT TO WRITE REVIEWS
+
+puts "Finding or Creating Categories ..."
+
+prod1 = Product.find_or_create_by! name: 'Electric Chair'
+prod2 = Product.find_or_create_by! name: 'Optimal Sleeping Bed'
+prod3 = Product.find_or_create_by! name: 'World\'s Largest Smartwatch'
+
+## REVIEWS
+
+puts "Re-creating Reviews ..."
+
+Review.destroy_all
+
+prod1.reviews.create!({
+  user:  user1,
+  description:  'Really eletric!! cons: too rough',
+  rating: 3,
+})
+prod1.reviews.create!({
+  user:  user1,
+  description:  'Too expensive men!',
+  rating: 2,
+})
+prod2.reviews.create!({
+  user:  user1,
+  description:  'Very confortable! very good made, but a little expensive',
+  rating: 4,
+})
+prod3.reviews.create!({
+  user:  user1,
+  description:  'NERDCORE BABY!',
+  rating: 5,
 })
 
 

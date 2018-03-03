@@ -23,8 +23,42 @@
           <dt>Price</dt>
           <dd><%= @product.price %></dd>
         </dl>
+        <hr class="split_div"></hr>
+
       </div>
+          
+
+      <div class="col-sm-8">
+        <hr class="split_div"></hr>
+        <% @product.reviews.each do |l|%>
+          <dl class="dl-horizontal">
+            <dt>Rating</dt>
+            <dd>
+              <div>
+                <%= l.rating%>
+                <% (1..l.rating).each do %>
+                  <span class="fa fa-star checked"></span>
+                <% end %>
+                <% (1..5-l.rating).each do %>
+                  <span class="fa fa-star"></span>
+                <% end %>
+              </div>
+            <dt>Description</dt>
+            <dd><%= l.description %></dd>
+          </dl>
+        <% end %>  
+        <div>
+          <% if current_user %>
+            <%= render 'review', product: @product %>
+          <% end %>
+        </div>
+ 
+      </div>
+
+      
     </div>
+
+
 
   </article>
 
