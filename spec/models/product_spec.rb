@@ -29,7 +29,7 @@ RSpec.describe Product, type: :model do
       expect(@product).to_not be_valid
       expect(@product.errors[:name].size).to eq(1)
     end
-    it "Name should be nil and return an error" do
+    it "Quantity should be nil and return an error" do
       @category = Category.new(name: "Men's Apparel")
       @product = Product.new(name: "just a shoe",
         price: nil,
@@ -39,7 +39,7 @@ RSpec.describe Product, type: :model do
       expect(@product).to_not be_valid
       expect(@product.errors[:price].size).to eq(2)
     end
-    it "Name should be nil and return an error" do
+    it "quantity should be nil and return an error" do
       @category = Category.new(name: "Men's Apparel")
       @product = Product.new(name: "just a shoe",
         price: 30,
@@ -49,7 +49,7 @@ RSpec.describe Product, type: :model do
       expect(@product).to_not be_valid
       expect(@product.errors[:quantity].size).to eq(1)
     end
-    it "Name should be nil and return an error" do
+    it "category should be nil and return an error" do
       @category = Category.new(name: "Men's Apparel")
       @product = Product.new(name: "just a shoe",
         price: 30,

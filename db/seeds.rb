@@ -30,7 +30,7 @@ user1 = User.create!({
   first_name:  'Diego',
   last_name:  'Ribas',
   email:  'diego@gmail.com',
-  password:  '1234',
+  password:  '123456',
 })
 
 
