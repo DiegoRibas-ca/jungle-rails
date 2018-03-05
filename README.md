@@ -5,6 +5,8 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Setup
 
+git clone git@github.com:DiegoRibas-ca/ChattyAPP_React.js.git
+
 1. Fork & Clone
 2. Run `bundle install` to install dependencies
 3. Create `config/database.yml` by copying `config/database.example.yml`
@@ -26,3 +28,13 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+## Screenshots
+
+!["User can create review and delete his reviews"  ](jungle-rails/docs/Screenshot from 2018-03-04 19-28-04.png)
+!["Login, logout, sign up implemented using rails. New categories implemented with product as a nested resource"  ](jungle-rails/docs/Screenshot from 2018-03-04 19-28-18.png )
+!["Stripe payments"  ](jungle-rails/docs/Screenshot from 2018-03-04 19-29-15.png )
+!["Order page created and feature to send  order by e-mail implemented"  ](jungle-rails/docs/Screenshot from 2018-03-04 19-29-31.png)
+
+
+
