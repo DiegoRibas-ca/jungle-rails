@@ -31,10 +31,10 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Screenshots
 
-!["User can create review and delete his reviews"  ](jungle-rails/docs/Screenshot from 2018-03-04 19-28-04.png)
-!["Login, logout, sign up implemented using rails. New categories implemented with product as a nested resource"  ](jungle-rails/docs/Screenshot from 2018-03-04 19-28-18.png )
-!["Stripe payments"  ](jungle-rails/docs/Screenshot from 2018-03-04 19-29-15.png )
-!["Order page created and feature to send  order by e-mail implemented"  ](jungle-rails/docs/Screenshot from 2018-03-04 19-29-31.png)
+!["User can create review and delete his reviews"  ](https://github.com/DiegoRibas-ca/jungle-rails/blob/master/docs/Screenshot%20from%202018-03-04%2019-28-04.png)
+!["Login, logout, sign up implemented using rails. New categories implemented with product as a nested resource"  ](https://github.com/DiegoRibas-ca/jungle-rails/blob/master/docs/Screenshot%20from%202018-03-04%2019-28-18.png )
+!["Stripe payments"  ](https://github.com/DiegoRibas-ca/jungle-rails/blob/master/docs/Screenshot%20from%202018-03-04%2019-29-15.png)
+!["Order page created and feature to send order by e-mail implemented"  ](https://github.com/DiegoRibas-ca/jungle-rails/blob/master/docs/Screenshot%20from%202018-03-04%2019-29-31.png)
 
 
 
