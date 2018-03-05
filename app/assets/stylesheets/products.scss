@@ -84,10 +84,28 @@ main section.products-show {
     .checked {
     color: orange;
     }
+    .form-review {
+      padding-left: 15%;
+    }
+    .form-review textarea {
+      width: 87%;
+      height: 100px;
+    }
     .split_div {
       border-top: 3px solid #3f87a6;
       height: 0;
       max-width: 80%;
+    }
+    .button-area {
+      display: flex;
+      width:100%;
+      flex-wrap: wrap;
+
+        button {
+          display: inline-block;
+          margin-right: 0;
+          height: 3em;
+        }
     }
   }
 }

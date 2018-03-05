@@ -1,15 +1,15 @@
-        <%= form_for [product, product.reviews.build] do |form| %>
-          <p>
-            <dt><%= form.label :rating %></dt>
-            <dd><%= form.select :rating, ['1','2','3','4','5'], :prompt => 'Select Rating' %></dd>
-          </p>
-        
-          <p>
-            <dt><%= form.label :description %></dt>
-            <dd><%= form.text_area :description %></dd>
-          </p>
-        
-          <p>
-            <%= form.submit %>
-          </p>
-        <% end %>
+<%= form_for [product, product.reviews.build] do |form| %>
+  <p>
+    <dt><%= form.label :rating %></dt>
+    <dd><%= form.select :rating, ['1','2','3','4','5'], :prompt => 'Select Rating' %></dd>
+  </p>
+
+  <p>
+    <dt><%= form.label :description %></dt>
+    <dd><%= form.text_area :description %></dd>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

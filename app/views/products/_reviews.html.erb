@@ -1,0 +1,26 @@
+<% reviews_reversed = @product.reviews.reverse %>
+    <% reviews_reversed.each do |l|%>
+        <div class="button-area">
+            <% if l.id != nil %>   
+                <dl class="dl-horizontal">
+                <dt>Rating</dt>
+                <dd>
+                    <div>
+                    <%= l.rating%>
+                    <% x = l.rating%>
+                    <% (1..x).each do %>
+                        <span class="fa fa-star checked"></span>
+                    <% end %>
+                    <% (1..5-x).each do %>
+                        <span class="fa fa-star"></span>
+                    <% end %>
+                    </div>
+                <dt>Description</dt>
+                <dd><%= l.description %></dd>
+                </dl>
+                <button ><%= link_to 'Delete', [@product, l],
+                    method: :delete,
+                    data: { confirm: 'Are you sure?' }  %></button>
+        </div>
+    <% end %>  
+<% end %>  
