@@ -64,6 +64,8 @@ end
 group :test do
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'poltergeist'
   gem 'database_cleaner'
   gem 'faker'
 end
